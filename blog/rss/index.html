@@ -1,67 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[BlogTime]]></title><description><![CDATA[Just a blogging platform.]]></description><link>http://my-ghost-blog.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Wed, 30 Jul 2014 14:02:01 GMT</lastBuildDate><atom:link href="http://my-ghost-blog.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Welcome to Ghost]]></title><description><![CDATA[<p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at <code>&lt;your blog URL&gt;/ghost/</code>. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[BlogTime]]></title><description><![CDATA[Just a blogging platform.]]></description><link>http://my-ghost-blog.com/</link><generator>Ghost v0.4.2</generator><lastBuildDate>Thu, 31 Jul 2014 16:06:48 GMT</lastBuildDate><atom:link href="http://my-ghost-blog.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Where are (and were) your Friends?]]></title><description><![CDATA[<p>I have just uploaded my latest web app which allows users to visualize their Facebook friends on a Google Map, either by current location or hometown. Friends can be filtered by friend lists.</p>
 
-<h2 id="gettingstarted">Getting Started</h2>
+<p>I’m sure has been done many times before, but I enjoyed developing it. Finally got to toy with a Google API, and was pleased to find their documentation helpful and thorough.</p>
 
-<p>Ghost uses something called Markdown for writing. Essentially, it's a shorthand way to manage your post formatting as you write!</p>
+<p>One of the tricks here was to create a <code>locations</code> array to collect all the users in each location:</p>
 
-<p>Writing in Markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use <em>shortcuts</em> to <strong>style</strong> your content. For example, a list:</p>
+<p><code>locations[location.id] = arrayOfFriendsInLocation</code></p>
 
-<ul>
-<li>Item number one</li>
-<li>Item number two
-<ul><li>A nested item</li></ul></li>
-<li>A final item</li>
-</ul>
+<p>After that’s populated, you only need to add one marker per city and lump all the friends in that city in an infowindow that displays when the marker is clicked.</p>
 
-<p>or with numbers!</p>
+<p>Interesting note about the Facebook Graph API: I was able to pull a list of all friends with my choice of fields, but when I tried to request a list of friends from a specific friend list, I was limited to only a few. Not sure why they would restrict it like that…</p>]]></description><link>http://my-ghost-blog.com/where-are-and-were-your-friends/</link><guid isPermaLink="false">45eb70d1-8799-4e55-982f-4cb02e4da62d</guid><dc:creator><![CDATA[Logan Joecks]]></dc:creator><pubDate>Wed, 05 Jun 2013 16:00:00 GMT</pubDate></item><item><title><![CDATA[What if you could Drive as Fast as an Airplane?]]></title><description><![CDATA[<p>I have somewhat of an answer for you!</p>
 
-<ol>
-<li>Remember to buy some milk  </li>
-<li>Drink the milk  </li>
-<li>Tweet that I remembered to buy the milk, and drank it</li>
-</ol>
+<p>While driving from the Grand Canyon to Las Vegas this past weekend, I figured I had the perfect opportunity to tackle this question. So I propped my GoPro on the dashboard of our rental car, set the cruise control to 80 mph, and hit record.</p>
 
-<h3 id="links">Links</h3>
+<p>I captured about a half hour of footage before the SD card filled up, but that proved to be more than enough. What you see below is the footage, some of which is sped up to create the illusion of traveling 511 mph which is the cruising speed of a Boeing 737. I chose that plane only because I often fly Southwest, and that is their go-to model.</p>
 
-<p>Want to link to a source? No problem. If you paste in url, like <a href='http://ghost.org/' >http://ghost.org</a> - it'll automatically be linked up. But if you want to customise your anchor text, you can do that too! Here's a link to <a href='http://ghost.org/' >the Ghost website</a>. Neat.</p>
+<p>So if you were ever thinking Boy, I wish I had decided to fly instead of drive, this is how fast* you could be going:</p>
 
-<h3 id="whataboutimages">What about Images?</h3>
+<p><iframe src='http://player.vimeo.com/video/61598500?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933'  width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href='http://vimeo.com/61598500' >What if You could Drive as Fast as an Airplane?</a> from <a href='http://vimeo.com/logstown' >Logan Joecks</a> on <a href='http://vimeo.com/' >Vimeo</a>.</p></p>
 
-<p>Images work too! Already know the URL of the image you want to include in your article? Simply paste it in like this to make it show up:</p>
+<p>So, crunching the numbers, the footage was sped up 6.4x to achieve the effect.</p>
 
-<p><img src='https://ghost.org/images/ghost.png'  alt="The Ghost Logo" /></p>
-
-<p>Not sure which image you want to use yet? That's ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and drag and drop the image in to upload:</p>
-
-<h3 id="quoting">Quoting</h3>
-
-<p>Sometimes a link isn't enough, you want to quote someone on what they've said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when we introduce spellcheck! For now - it's definitely a word.</p>
-
-<blockquote>
-  <p>Wisdomous - it's definitely a word.</p>
-</blockquote>
-
-<h3 id="workingwithcode">Working with Code</h3>
-
-<p>Got a streak of geek? We've got you covered there, too. You can write inline <code>&lt;code&gt;</code> blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.</p>
-
-<pre><code>.awesome-thing {
-    display: block;
-    width: 100%;
-}
-</code></pre>
-
-<h3 id="readyforabreak">Ready for a Break?</h3>
-
-<p>Throw 3 or more dashes down on any new line and you've got yourself a fancy new divider. Aw yeah.</p>
-
-<hr />
-
-<h3 id="advancedusage">Advanced Usage</h3>
-
-<p>There's one fantastic secret about Markdown. If you want, you can  write plain old HTML and it'll still work! Very flexible.</p>
-
-<p><input type="text" placeholder="I'm an input field!" /></p>
-
-<p>That should be enough to get you started. Have fun - and let us know what you think :)</p>]]></description><link>http://my-ghost-blog.com/welcome-to-ghost/</link><guid isPermaLink="false">b163b884-fd37-4ef9-8429-a44c2dfccbc3</guid><category><![CDATA[Getting Started]]></category><dc:creator><![CDATA[Logan Joecks]]></dc:creator><pubDate>Wed, 30 Jul 2014 02:26:54 GMT</pubDate></item></channel></rss>
+<p>* Even faster because <a href='http://en.wikipedia.org/wiki/As_the_crow_flies' >planes fly like crows</a>.</p>]]></description><link>http://my-ghost-blog.com/what-if-you-could-drive-as-fast-as-an-airplane/</link><guid isPermaLink="false">28825b0f-0995-47a5-a491-ffbb36835253</guid><dc:creator><![CDATA[Logan Joecks]]></dc:creator><pubDate>Fri, 15 Mar 2013 16:00:00 GMT</pubDate></item><item><title><![CDATA[Official Launch of loganjoecks.com]]></title><description><![CDATA[<p>Well, I had the domain registered a while ago, and I’ve been working on this wordpress layout for the last week or so, but now, just like a finely-tuned engine or a freshly-baked loaf of bread, the site is running smoothly and it’s ready for the world to smell.</p>]]></description><link>http://my-ghost-blog.com/official-launch-of-loganjoecks-com/</link><guid isPermaLink="false">595f2692-55dd-4da2-852a-38a2e535f15e</guid><dc:creator><![CDATA[Logan Joecks]]></dc:creator><pubDate>Wed, 06 Mar 2013 17:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>Where are (and were) your Friends?</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=ad5cd164bc" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    
+    <meta name="generator" content="Ghost 0.4" />
+<link rel="alternate" type="application/rss+xml" title="BlogTime" href="../rss/index.html">
+<link rel="canonical" href="http://my-ghost-blog.com/where-are-and-were-your-friends/" />
+</head>
+<body class="post-template">
+
+    
+    
+
+
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        
+        <header class="post-header">
+            <a class="blog-logo" href="http://my-ghost-blog.com">
+                
+                    <span class="blog-title">BlogTime</span>
+                
+            </a>
+        </header>
+
+        
+        
+
+            <span class="post-meta"><time datetime="2013-06-05">05 Jun 2013</time> </span>
+
+            <h1 class="post-title">Where are (and were) your Friends?</h1>
+
+            <section class="post-content">
+                <p>I have just uploaded my latest web app which allows users to visualize their Facebook friends on a Google Map, either by current location or hometown. Friends can be filtered by friend lists.</p>
+
+<p>I’m sure has been done many times before, but I enjoyed developing it. Finally got to toy with a Google API, and was pleased to find their documentation helpful and thorough.</p>
+
+<p>One of the tricks here was to create a <code>locations</code> array to collect all the users in each location:</p>
+
+<p><code>locations[location.id] = arrayOfFriendsInLocation</code></p>
+
+<p>After that’s populated, you only need to add one marker per city and lump all the friends in that city in an infowindow that displays when the marker is clicked.</p>
+
+<p>Interesting note about the Facebook Graph API: I was able to pull a list of all friends with my choice of fields, but when I tried to request a list of friends from a specific friend list, I was limited to only a few. Not sure why they would restrict it like that…</p>
+            </section>
+
+            <footer class="post-footer">
+
+                <section class="author">
+                    <h4>Logan Joecks</h4>
+                    <p></p>
+                    <ul class="author-meta clearfix">
+                        <li>Boston, MA</li>
+                        <li><a href="loganjoecks.com">loganjoecks.com</a></li>
+                    </ul>
+                </section>
+
+                <section class="share">
+                    <h4>Share this post</h4>
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Where%20are%20(and%20were)%20your%20Friends%3F&amp;url=http://my-ghost-blog.com/where-are-and-were-your-friends/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://my-ghost-blog.com/where-are-and-were-your-friends/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=http://my-ghost-blog.com/where-are-and-were-your-friends/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+
+            </footer>
+
+        
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="http://my-ghost-blog.com/rss/"><span class="tooltip">Subscribe!</span></a>
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="http://my-ghost-blog.com/">BlogTime</a> &copy; 2014 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+        </div>
+    </footer>
+
+    
+    <script src="../public/jquery.js?v=ad5cd164bc"></script>
+
+    
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=ad5cd164bc"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=ad5cd164bc"></script>
+
+</body>
+</html>
