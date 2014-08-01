@@ -215,13 +215,13 @@ iframe .header {
 .header .social {
     margin-top: 60px;
 }
-.header .container .social li {
+/*.header .container .social li {
     width: 72px;
 }
 .header .container .social span {
     font-size: 67%;
     font-family: 'Lato', arial, sans-serif;
-}
+}*/
 .header .container .social a {
     background: #b0b7bf;
     width: 50px;

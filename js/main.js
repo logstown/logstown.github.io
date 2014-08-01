@@ -22,6 +22,8 @@ jQuery(document).ready(function($) {
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
 
+    $('.social a').tooltip();
+
     /* jQuery RSS - https://github.com/sdepold/jquery-rss */
     $("#rss-feeds").rss(
 
