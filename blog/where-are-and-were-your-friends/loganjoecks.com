@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="csrf-param" content="qtrxDlJeIMtpZYX3rShxzVohHU2FRHMl5Bp3c=" />
+    <meta name="csrf-param" content="Frp7qmF4XnHu+/M2F+dV/BSL07ONFhSZPEJJU=" />
 
     <title>Ghost Admin</title>
 
@@ -18,19 +18,19 @@
     <meta name="apple-mobile-web-app-title" content="Ghost" />
 
     <link rel="shortcut icon" href="../favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" href="http://127.0.0.1:2368/ghost/img/touch-icon-iphone.png?v=06c29f22b4" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://127.0.0.1:2368/ghost/img/touch-icon-ipad.png?v=06c29f22b4" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://127.0.0.1:2368/ghost/img/small.png?v=06c29f22b4" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://127.0.0.1:2368/ghost/img/medium.png?v=06c29f22b4" />
+    <link rel="apple-touch-icon-precomposed" href="http://127.0.0.1:2368/ghost/img/touch-icon-iphone.png?v=755f05323f" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://127.0.0.1:2368/ghost/img/touch-icon-ipad.png?v=755f05323f" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://127.0.0.1:2368/ghost/img/small.png?v=755f05323f" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://127.0.0.1:2368/ghost/img/medium.png?v=755f05323f" />
 
     <meta name="application-name" content="Ghost" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-square70x70logo" content="/ghost/img/small.png?v=06c29f22b4" />
-    <meta name="msapplication-square150x150logo" content="/ghost/img/medium.png?v=06c29f22b4" />
-    <meta name="msapplication-square310x310logo" content="/ghost/img/large.png?v=06c29f22b4" />
+    <meta name="msapplication-square70x70logo" content="/ghost/img/small.png?v=755f05323f" />
+    <meta name="msapplication-square150x150logo" content="/ghost/img/medium.png?v=755f05323f" />
+    <meta name="msapplication-square310x310logo" content="/ghost/img/large.png?v=755f05323f" />
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" />
-    <link rel="stylesheet" href="http://127.0.0.1:2368/ghost/css/ghost-ui.min.css?v=06c29f22b4" />
+    <link rel="stylesheet" href="http://127.0.0.1:2368/ghost/css/ghost-ui.min.css?v=755f05323f" />
 </head>
 <body class="ghost-login">
     
@@ -62,6 +62,6 @@
     <div id="modal-container"></div>
     <div class="modal-background fade"></div>
 
-    <script src="http://127.0.0.1:2368/ghost/scripts/vendor.js?v=06c29f22b4"></script><script src="http://127.0.0.1:2368/ghost/scripts/helpers.js?v=06c29f22b4"></script><script src="http://127.0.0.1:2368/ghost/scripts/templates.js?v=06c29f22b4"></script><script src="http://127.0.0.1:2368/ghost/scripts/models.js?v=06c29f22b4"></script><script src="http://127.0.0.1:2368/ghost/scripts/views.js?v=06c29f22b4"></script>
+    <script src="http://127.0.0.1:2368/ghost/scripts/vendor.js?v=755f05323f"></script><script src="http://127.0.0.1:2368/ghost/scripts/helpers.js?v=755f05323f"></script><script src="http://127.0.0.1:2368/ghost/scripts/templates.js?v=755f05323f"></script><script src="http://127.0.0.1:2368/ghost/scripts/models.js?v=755f05323f"></script><script src="http://127.0.0.1:2368/ghost/scripts/views.js?v=755f05323f"></script>
 </body>
 </html>
