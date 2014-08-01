@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
     $("#rss-feeds").rss(
 
         //Change this to your own rss feeds
-        "http://logstown.github.io/blog/rss/",
+        "http://loganjoecks.com/blog/rss/",
 
         {
             // how many entries do you want?
