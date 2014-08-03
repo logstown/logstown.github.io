@@ -19,6 +19,17 @@ jQuery(document).ready(function($) {
 
     });
 
+    $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false,
+        callback: {
+            complete: function(num) {
+                $('#full-image').attr('href', 'img/ux/' + num + '.png');
+            }
+        }
+    });
+
     /* Bootstrap Tooltip for Skillset */
     $('.level-label').tooltip();
 
