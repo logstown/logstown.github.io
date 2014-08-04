@@ -68,7 +68,7 @@
                         <p>I am a web developer by trade and a problem-solving, technology-enthusiast at heart.</p>
 
                         <p>I enjoy interpreting and visualizing any kind of data you can throw at me, and javascript seems to be the best vehicle nowadays. <a href="http://d3js.org">D3.js</a> helps a lot too!</p>
-                        <p>When I'm not developing the web, I also enjoy hiking, basketball, playing guitar, and spending time with my wife, Celie and brand new baby son, Henry.</p>
+                        <p>When I'm not developing the web, I also enjoy hiking, basketball, playing guitar, and spending time with my wife Celie and brand new baby son, Henry.</p>
                     </div>
                 </section>
                 <section class="latest section">
@@ -79,9 +79,6 @@
                             <small>(Business and IT: together at last!)</small>
                         </h3>
                         <div class="content">
-                            <!-- <div class="item text-center">
-    <p class="summary">Business and IT: together at last!</p>
-</div> -->
                             <div id="slides">
                                 <img src="img/ux/1.png">
                                 <img src="img/ux/2.png">
@@ -109,28 +106,48 @@
 
                                 <p>I worked on a team of five developers using Agile methodology. We had two-week sprints, each ending with a product demo for our stakeholders where we showcased our progress and received feedback.</p>
 
-                                <p>View the video below to check out the UI in action. Video and stills thanks to <a href="http://quintinmarcus.com">Quintin Marcus</a>, the UX designer.</p>
+                                <p>View the video below to check out the UI in action. Screencasts and stills thanks to <a href="http://quintinmarcus.com">Quintin Marcus</a>, the UX designer.</p>
                             </div>
                             <!--//desc-->
                             <div class="video-wrapper">
                                 <iframe width="560" height="315" src="//www.youtube.com/embed/nrCLOU2bDZE?rel=0" frameborder="0" allowfullscreen></iframe>
                             </div>
 
-                            <a href="http://youtu.be/b5YRbvdAfoc" class="blog-link"> <i class="fa fa-external-link"></i> More features <i class="fa fa-youtube-play"></i>
-                            </a>
+                            <a href="http://youtu.be/b5YRbvdAfoc" class="blog-link"> <i class="fa fa-external-link"></i> More features <i class="fa fa-youtube-play"></i></a>
                         </div>
                         <!--//content-->
                     </div>
                     <!--//section-inner-->
                 </section>
                 <!--//section-->
-
                 <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Personal Projects
-                            <small>(mainly to enhance my skills)</small>
-                        </h2>
+                        <h2 class="heading">Personal Projects</h2>
                         <div class="content">
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://oscars.firebaseapp.com" target="_blank">
+                                    <img class="img-responsive project-image" src="img/oscars.png" alt="Family Oscar Competition" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://oscars.firebaseapp.com" target="_blank">Family Oscar Competition</a>
+                                    </h3>
+                                    <p>My wife's family competes in an annual Oscar pool, and they take it very seriously. Unsatisfied with the inefficiency of exchanging sheets of paper, I made it my mission to streamline the process for them this year. Now, participants can authenticate through Facebook to make their picks and then are able to view their standings live in realtime on Oscar night. </p>
+
+                                    <p>In building this app, I got to make use of
+                                        <strong>three-way data-binding</strong>
+                                        through <a href="http://firebase.com">Firebase</a> and AngularJS. As winners were announced throughout the night, I would add add the data in Firebase, which would immediately update the users' view and model. No refresh required! The users' standings were then animated using D3.js</p>
+
+                                    <span class="label label-default">AngularJS</span>
+                                    <span class="label label-default">D3js</span>
+                                    <span class="label label-default">Firebase</span>
+
+                                    <p class="github-link">
+                                        <a class="more-link" href="https://github.com/logstown/oscars"><i class="fa fa-github" target="_blank"></i>View on Github</a>
+                                    </p>
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="http://loganjoecks.com/friends-map/" target="_blank">
                                     <img class="img-responsive project-image" src="img/friends-map.png" alt="Friends Map" />
@@ -201,31 +218,6 @@
                                 <!--//desc-->
                             </div>
                             <!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://oscars.firebaseapp.com" target="_blank">
-                                    <img class="img-responsive project-image" src="img/oscars.png" alt="Family Oscar Competition" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://oscars.firebaseapp.com" target="_blank">Family Oscar Competition</a>
-                                    </h3>
-                                    <p>My wife's family competes in an annual Oscar pool, and they take it very seriously. Unsatisfied with the inefficiency of exchanging sheets of paper, I made it my mission to streamline the process for them this year. Now, participants can authenticate through Facebook to make their picks and then are able to view their standings live in realtime on Oscar night. </p>
-
-                                    <p>I got to make use of
-                                        <strong>three-way data-binding</strong>
-                                        through <a href="http://firebase.com">Firebase</a> and AngularJS. As awards were won, I would add each winner in Firebase, which would immediately update the users' view and model. No refresh required! The users' standings were then animated using D3.js</p>
-
-                                    <span class="label label-default">AngularJS</span>
-                                    <span class="label label-default">D3js</span>
-                                    <span class="label label-default">Firebase</span>
-
-                                    <p class="github-link">
-                                        <a class="more-link" href="https://github.com/logstown/oscars"><i class="fa fa-github" target="_blank"></i>View on Github</a>
-                                    </p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
-
                             * Unfortunately, when Facebook rolls out Graph API v2.0 on 12/25/2014, the
                             <code>/me/friends</code>API endpoint <a href="https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids" target="_blank">will not return your full list of friends</a>, thus limiting the value of these apps. A sad loss of basic functionality <i class="fa fa-frown-o"></i>
                         </div>
@@ -279,7 +271,7 @@
 
                                 <div class="item">
                                     <h3 class="level-title">JQuery
-                                        <span class="level-label">Comfortable</span>
+                                        <span class="level-label">Proficient</span>
                                     </h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="50%">
@@ -291,7 +283,7 @@
 
                                 <div class="item">
                                     <h3 class="level-title">PHP
-                                        <span class="level-label">Comfortable</span>
+                                        <span class="level-label">Proficient</span>
                                     </h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="65%">
@@ -302,7 +294,7 @@
                                 <!--//item-->
                                 <div class="item">
                                     <h3 class="level-title">Python
-                                        <span class="level-label">Comfortable</span>
+                                        <span class="level-label">Proficient</span>
                                     </h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="57%">
@@ -363,7 +355,6 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
                 <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Education</h2>
@@ -385,7 +376,6 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
                 <aside class="list conferences aside section">
                     <div class="section-inner">
                         <h2 class="heading">Meetups</h2>
@@ -402,7 +392,6 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
                 <aside class="list conferences aside section">
                     <div class="section-inner">
                         <h2 class="heading">Conferences</h2>
@@ -416,7 +405,30 @@
                     <!--//section-inner-->
                 </aside>
                 <!--//section-->
-
+                <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Coming Soon!</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3><a class="more-link" href="http://loganjoecks.com/friends-map">Friends Map</a></h3>
+                                    <ul>
+                                        <li>built with <span class="label label-default">AngularJS</span></li>
+                                    </ul>  
+                                </li>
+                                <li>
+                                    <h3><a class="more-link" href="http://loganjoecks.com/facebook-mutual-friends">Facebook Mutual Friends</a></h3>
+                                    <ul>
+                                        <li>built with <span class="label label-default">AngularJS</span> and <span class="label label-default">D3.js</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--//content-->
+                    </div>
+                    <!--//section-inner-->
+                </aside>
+                <!--//section-->
             </div>
             <!--//secondary-->
         </div>
